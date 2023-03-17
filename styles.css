@@ -6,30 +6,69 @@
 
 body{
     background-color: hsl(226, 43%, 10%);
-    text-align: center;
-    display: flex;
-    align-content: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .grid-container{
+    
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+  
     color: white;
-    width: 80%;
+    width: 75%;
     border: solid 1px white;
+    gap:1em;
 }
 
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
     text-align: center;
-    width: 80%;
+    border-radius: 8px;
+    position: relative;
+  }
+
+.one{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: hsl(246, 80%, 60%);
+  }
+
+ .two{
+background-color: hsl(15, 100%, 70%);
+ } 
+
+ .three{
+background-color: hsl(195, 74%, 62%);
+ }
+
+.four{
+background-color: hsl(348, 100%, 68%);
+}
+
+.five{
+background-color: hsl(145, 58%, 55%);
+}
+
+.six{
+background-color: hsl(264, 64%, 52%);
+}
+
+.seven{
+background-color: hsl(43, 84%, 65%);
+}
+
+
+.content__profile, .content{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 8px;
+    width: 100%;
+    position: absolute;
     
   }
 
-.big{
-    grid-row-start: 1;
-    grid-row-end: 4;
+  .content{
+    bottom:0;
+  }
+
+  .content__profile{
+    top:0;
   }
