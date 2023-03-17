@@ -13,11 +13,10 @@ body{
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  
     color: white;
     width: 75%;
     border: solid 1px white;
-    gap:1em;
+    gap:1.3em;
 }
 
 .grid-item {
@@ -29,7 +28,14 @@ body{
 .one{
     grid-row-start: 1;
     grid-row-end: 4;
-    background-color: hsl(246, 80%, 60%);
+    background-color: hsl(235, 46%, 20%);
+    height: 300px;
+  }
+
+  .profile__pic{
+    width: 40%;
+    border: solid 2px white;
+    border-radius: 50%;
   }
 
  .two{
@@ -62,7 +68,8 @@ background-color: hsl(43, 84%, 65%);
     border-radius: 8px;
     width: 100%;
     position: absolute;
-    
+    padding: 1.5em;
+    max-height: 65%;
   }
 
   .content{
@@ -70,5 +77,6 @@ background-color: hsl(43, 84%, 65%);
   }
 
   .content__profile{
+    background-color: hsl(246, 80%, 60%);
     top:0;
   }
